@@ -9,7 +9,7 @@ module.exports = class Class {
     assignLeader(student) {
         this.leader = student.id;
         if (this.teacher) {
-            teacher.notifyLeaderAssigned(`${student.name} has become Leader of Class ${student.clazz.number}`);
+            teacher.notifyLeaderAssigned(`${student.name} become Leader of Class ${student.clazz.number}`);
         }
 
         if (this.member === student.id) {
