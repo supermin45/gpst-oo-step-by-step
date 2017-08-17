@@ -47,9 +47,7 @@ describe("Student", () => {
     let student = new Student("Tom", 21, clazz);
     let introduce = student.introduce();
 
-    expect(introduce).toBe("My name is Tom. I am 21 years old. I am a Student. I haven't been allowed to joi" +
-        "n Class.");
-
+    expect(introduce).toBe("My name is Tom. I am 21 years old. I am a Student. I haven't been allowed to join class.");
   });
 
   it("should introduce student is a leader, when class assign this student to be a lea" +
