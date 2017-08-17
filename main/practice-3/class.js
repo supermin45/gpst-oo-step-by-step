@@ -9,7 +9,7 @@ module.exports = class Class {
     assignLeader(student) {
         this.leader = student.id;
         if (this.teacher) {
-            teacher.notifyLeaderAssigned(`${student.name} become Leader of Class ${student.clazz.number}`);
+            this.teacher.notifyLeaderAssigned(`${student.name} become Leader of Class ${student.clazz.number}`);
         }
 
         if (this.member === student.id) {
@@ -22,7 +22,7 @@ module.exports = class Class {
     appendMember(student) {
         this.member = student.id;
         if (this.teacher) {
-            teacher.notifyStudentAppended(`${student.name} has joined Class ${student.clazz.number}`)
+            this.teacher.notifyStudentAppended(`${student.name} has joined Class ${student.clazz.number}`)
         }
     }
 }
